@@ -24,5 +24,5 @@
 
 (defn create-diamond [letter]
   (let [seq-letter-to-choose (create-letter-seq letter)
-        seq-raw-diamon-row   (create-reverse-letter-seq letter)]
-    (concat-seq-adding-returns (map (partial replace-different-letters-with-space seq-raw-diamon-row) (map str seq-letter-to-choose)))))
+        seq-raw-diamond-row   (create-reverse-letter-seq letter)]
+    (concat-seq-adding-returns (map (partial replace-different-letters-with-space seq-raw-diamond-row) (map str seq-letter-to-choose)))))
